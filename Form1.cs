@@ -82,7 +82,7 @@ namespace Task1HotCup
                 table4.Rows.Add(delta, Math.Round(x1,4));
                 chart3.Series[0].Points.AddXY(delta,x1);
             }
-            for (double delta = 0.1; delta >= 0.005; delta /= 2)
+            for (double delta = 0.01; delta >= 0.005; delta /= 2)
             {
                var x2 = Math.Abs(80.55 - Program.FindTemp(tempOut, tempIn, 1, delta, gamma, 0));
                 chart3.Series[0].Points.AddXY(delta, x2);
